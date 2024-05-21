@@ -1,7 +1,7 @@
 import PyPDF2
 from connection import create_connection
 
-pdf = open('Boleto_CLAUDIA CAROLINE AVELINO LEAL_29_06_2024_698038984.pdf','rb')
+pdf = open('teste.pdf','rb')
 reader = PyPDF2.PdfReader(pdf)
 pagina = reader.pages[0]
 
@@ -20,10 +20,10 @@ for elemento in text4:
 print(string)
 
 # Defina as credenciais de conexão
-host = "localhost"
-dbname = "uriboca"
-user = "postgres"
-password = "123456"
+host = "host_name"
+dbname = "db_name"
+user = "user_db"
+password = "password"
 port = "5432"  # Normalmente 5432 para PostgreSQL
 
 # Estabeleça a conexão usando a função importada
@@ -34,7 +34,7 @@ if connection:
         cursor = connection.cursor()
 
         # Defina a consulta SQL para inserir o texto no banco de dados
-        insert_query = f"INSERT INTO faturas (name,value,save_at) VALUES ({string}'21/05/2024');"
+        insert_query = f"INSERT INTO faturas (columns) VALUES (values);"
         
         # Execute a consulta passando o texto extraído
         cursor.execute(insert_query, (string,))
