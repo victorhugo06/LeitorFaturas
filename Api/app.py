@@ -57,7 +57,7 @@ def update_fatura(id):
 
 @app.route('/faturas/<int:id>', methods=['DELETE'])
 def delete_fatura(id):
-    fatura = Faturas.query.filter_by(id=fatura_id).first()
+    fatura = Faturas.query.filter_by(id=id).first()
     if fatura:
         db.session.delete(fatura)
         db.session.commit()
