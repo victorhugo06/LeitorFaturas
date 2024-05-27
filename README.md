@@ -6,16 +6,23 @@ Sistema ler um arquivo e salva as informações específicas em um banco de dado
 
 Para executar a aplicação de extrator de texto em arquivo PDF, basta rodar o arquivo main.py
 
+Obs.: deve-se colocar o caminho local da pasta das faturas utilizadas como base para o teste, pois o programa irá buscar o diretório local na máquina.
+
+```bash
 python main.py
+```
+
 
 Importante salientar que deve ser configurado o banco de dados de acordo com o banco utilizado como teste
 
 criar a tabela "faturas"
 
+```bash
 create table faturas (
   id serial not null,
   description text not null
 )
+```
 
 #instalar as seguintes bibliotecas
 ##pypdf2
