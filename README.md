@@ -12,8 +12,15 @@ Obs.: deve-se colocar o caminho local da pasta das faturas utilizadas como base 
 python main.py
 ```
 
-
 Importante salientar que deve ser configurado o banco de dados de acordo com o banco utilizado como teste
+```bash
+    dbname="uriboca",
+    user="postgres",
+    password="123456",
+    host="localhost",
+    port="5432"
+```
+
 
 criar a tabela "faturas"
 
