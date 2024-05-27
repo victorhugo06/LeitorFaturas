@@ -32,5 +32,11 @@ create table faturas (
 ```
 
 #instalar as seguintes bibliotecas
-##pypdf2
-##psycopg2
+# pypdf2
+```bash
+pip install pypdf2
+```
+# psycopg2
+```bash
+pip install psycopg2
+```
