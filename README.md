@@ -14,9 +14,9 @@ python main.py
 
 Importante salientar que deve ser configurado o banco de dados de acordo com o banco utilizado como teste
 ```bash
-    dbname="uriboca",
-    user="postgres",
-    password="123456",
+    dbname="db_name",
+    user="db_user",
+    password="db_password",
     host="localhost",
     port="5432"
 ```
